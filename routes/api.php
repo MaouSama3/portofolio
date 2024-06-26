@@ -3,6 +3,10 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
+// IMPORT DATA
+use App\Http\Controllers\simple;
+
+Route::get('/data', [simple::class, 'index']);
 /*
 |--------------------------------------------------------------------------
 | API Routes
